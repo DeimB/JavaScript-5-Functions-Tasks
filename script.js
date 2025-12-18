@@ -32,7 +32,9 @@ getInvertedPyramid(4);
 // ========= Task-4 =========
 const getComb = (number) => {
   for (let i = 1; i <= number; i++) {
-    if (i % 2 === 0) {
+    if (i % 2 === 0 && i === number) {
+      console.log("");
+    } else if (i % 2 === 0) {
       console.log("#");
     } else {
       console.log("#".repeat(number));
@@ -40,7 +42,7 @@ const getComb = (number) => {
   }
 };
 console.log("Comb:");
-getComb(7);
+getComb(8);
 
 // ========= Task-5 =========
 const getRandomNumberFromRange = (number) => {
